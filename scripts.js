@@ -1,14 +1,16 @@
 /* Add your JavaScript to this file */
 window.onload=function(){
-function addEmail(formData){
-   let new=formData.email.value;
-   var messageElement=document=document.querySelector('.message');
-   if(new){
-      messageElement.innerHTML=' Thank you! Your email <${new}> has been addded to your mailing list';
-      return false;
-   }else{
-       messageElement.innerHTML="Please enter a valid email";
-       return true;
-   }
-}
+  var Subbutton=document.getElementByTagName("button")[0];
+  Subbutton.addEventListener("click",SubbuttonMsg);
+  
+  function SubbuttonMsg() {
+    if (document.getElementById("email").innerHTML.length == 0) {
+        var message = document.getElementsByClassName('message')[0];
+        message.innerHTML += "Please enter a valid email address";}
+    else {
+        var message = document.getElementsByClassName('message')[0];
+        var newemail =document.getElementById("email").innerHTML;
+        message.innerHTML += "Thank you! Your email address ${newemail} has been added to our mailing list!";
+    }
+  }
 }
