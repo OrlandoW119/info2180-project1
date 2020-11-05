@@ -1,4 +1,4 @@
-/* Add your JavaScript to this file */
+ /* Add your JavaScript to this file */
 window.onload=function(){
  document.addEventListener('DOMContentLoaded', function() {
     var press = document.getElementsByClassName("btn");
