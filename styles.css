@@ -32,13 +32,11 @@ header.nav{
    color:#6b7280;
 }
 
-header nav:hover{
+li a:hover{
    color:#5A67D8;
-   cursor:pointer;
-   
 }
 
-.learn-about. cards{
+.learn-about .cards{
    display:grid;
    grid-template-columns:250px,250px,250px;
    grid-template-rows:max-content;
@@ -51,7 +49,7 @@ header nav:hover{
    margin:20px;
    display:inline;
    border-radius:5px;
-   box-shadows:2px 1px 2px 1px;
+   box-shadow:2px 1px 2px 1px;
    
 
 }
@@ -60,6 +58,7 @@ header nav:hover{
    max-width:100%;
    height:auto;
    justify-content:center;
+   align-items: center;
 
 }
 
@@ -69,15 +68,19 @@ header nav:hover{
 
 }
 
-.learn-about .card-body.h2{
+.learn-about h2{
    font-size:24px;
+   color:#48BB78;
 }
 
-.learn-about. cards>h3{
+.learn-about .cards h3{
    font-size:21px;
    color:#48BB78;
 }
 
+#email {
+   padding: 5px;
+}
 
 
 li a{
@@ -98,9 +101,16 @@ li a{
 .overview-hero div.container{
    display:flex;
 }
+
+.card{
+   text-align: center;
+   align-items: center;
+   justify-self: center;
+   padding: 15px;
+}
 .cards{
-   display:flex;
-   flex-direction:row;
+   display:grid;
+   grid-template-columns: 1fr 1fr 1fr;
    column-count:3;
 }
 
@@ -119,7 +129,7 @@ img[src="turk.jpg"]{
 }
 
 img[src="mini.jpg"]{
-   border-radius:5px;
+   border-radius:50%;
    float:left;
    padding-right:20px;
 }
@@ -132,22 +142,53 @@ img[src="heal.jpg"]{
 }
 
 
-stories.container{
+.stories .container{
    align-content:center;
+   padding-bottom: 20px;
 }
 
+.stories h2 {
+color: #5A67D8;
+}
+
+.stories a{
+color:#5A67D8;
+text-decoration: none; /* This removes the underline*/
+}
+
+/*.stories h3{
+font-size: 18px;
+}*/
+
+
+.testing .container{
+   display: grid;
+   grid-template-columns: 2fr 1fr 1fr;
+   align-items: center;
+   padding: 10px;
+   padding-right: 65px;
+  
+  
+}
 .testing{
    grid-row:4;
-   grid-column:1/4;
+   grid-column:1/5;
    background-color:#4A5568;
    color:#ffffff;
    padding:50px;
    padding-left:20%;
    float:left;
    font-size:18px;
-}
-testing.btn{
+  }
+
+.testing .btn{
   float:right;
+  margin-left:5px;
+  border-radius:5px;
+  background-color:#48BB78;
+  color:white;
+  padding:8px;
+  text-decoration: none;
 }
 
 .newsletter{
@@ -157,12 +198,24 @@ testing.btn{
    background-color:#48BB78;
    color:#ffffff;
    padding-bottom:50px;
+   padding-top:50px;
    font-size:18px; 
- 
 }
+
+.newsletter .btn{
+   margin-left:5px;
+   background-color:#5A67D8;
+   border-radius:5%;
+}
+.newsletter p{
+   align-self:center;
+   align-items: center;
+}
+
 
 .newsletter.container.form-group{
    padding-right:20px;
+  
 }
 
 form{
